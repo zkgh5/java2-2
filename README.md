@@ -1,11 +1,41 @@
 # 김준호 202330208 
-
+## 스페이스바 2번 줄 넘김
 
 ## 5월 17일
+■ 컨테이너 배치관리자    
+    - 컨테이너마다 하나의 배치관리자 존재  
+    - 컨테이너에 부착되는 컴포넌트의 위치와 크기 결정  
+    - 컨테이너의 크기가 변경되면, 컴포넌트의 위치와 크기 재결정  
+ 
+■ 배치 관리자 대표 유형 4가지  
+    - FlowLayout 배치관리자  
+    - BorderLayout 배치관리자  
+    - GridLayout 배치관리자  
+    - CardLayout 배치관리자  
 
+■ 컨테이너의 디폴트 배치관리자 - 컨테이너 생성시 자동으로 생성되는 배치관리자  
 
+■ 컨테이너에 새로운 배치관리자 설정 - setLayout(LayoutManager lm) 메소드 호출(lm을 새로운 배치관리자로 설정)  
 
+■ 생성자 - FlowLayout()  
+        - FlowLayout(int align, int hGap, int yGap)  
+        - align : 컴포넌트를 정렬하는 방법 지정.왼쪽 정렬(FlowLayout.LEFT), 오른쪽 정렬(FlowLayout.RIGHT), 
+        중앙 정렬(FlowLayout.CENTER(디폴트))  
+        - hGap : 좌우 두 컴포넌트 사이의 수평 간격. 픽셀 단위. 디폴트는 5  
+        - yGap : 상하 두 컴포넌트 사이의 수직 간격. 픽셀 단위. 디폴트는 5  
 
+■ borderLayout 배치관리자   
+    - 배치방법 : 컨테이너 공간을 5 구역으로 분할, 배치(동, 서, 남, 북, 중앙)  
+
+■ GridLayout 배치관리자  
+    - 배치방법 : 컨테이너 공간을 동일한 사각형 격자(그리드)로 분할하고 각 셀에 컴포넌트 하나씩 매치  
+
+■ GridLayout 생성자
+    - GridLayout()  
+    - GridLayout(int rows, int cols)  
+
+■ 컴포넌트의 절대 위치와 크기 설정   
+    - 배치 관리자가 없는 컨테이너의 삽입은 컴포넌트의 크기와 위치를 직접 설정해야함  
 
 
 
